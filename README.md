@@ -4,7 +4,7 @@
 
 ## C-style
 
-<p align="justify">Программа желательно должна была быть консольной утилитой на C, поэтому в папке ROBOPRO_C лежит C-style решение данной задачи. Система сборки - make. В makefile определены цели: общая, exe и clean. Также задана переменная file для передачи конкретного файла с данными.</p>
+<p align="justify">В качестве пожелания программа должна быть консольной утилитой на C, поэтому в папке ROBOPRO_C лежит C-style решение данной задачи. Система сборки - make. В makefile определены цели: общая, exe и clean. Также задана переменная file для передачи конкретного файла с данными.</p>
 
 <p align="justify">Примеры команд:</p>
 
@@ -15,7 +15,7 @@ make clean
 make exe | ./coordinates testData/degrees2.txt
 ```
 
-<p align="justify">Примеры работы программы:</p>
+<p align="justify">Пример работы программы:</p>
 
 ```console
 make
@@ -27,11 +27,15 @@ z = 1.215349
 rm coordinates 2>/dev/null
 ```
 
-<img src="https://github.com/AlferovKirill/SignalHandler/assets/59083480/60f06de8-5ebc-44ac-b5a9-5ab527e38506">
-<p align="center">Sender demonstration work in network</p>
+![degrees](https://github.com/AlferovKirill/Task/assets/59083480/f76f0a7b-08c5-4c32-9284-d84c6e38f5ae)
+![degrees2](https://github.com/AlferovKirill/Task/assets/59083480/1f5351e2-0ec6-49c0-9597-d81cf17fa716)
 
-<img src="https://github.com/AlferovKirill/SignalHandler/assets/59083480/095da701-ade6-4fd8-bbf6-f888950b0f63">
-<p align="center">Receiver demonstration work in network</p>
+https://github.com/AlferovKirill/Task/assets/59083480/4385d298-6dc3-4f0f-8b18-9122fa568b0a
 
-https://github.com/AlferovKirill/SignalHandler/assets/59083480/ce9b1e6d-d54f-43b1-8a8e-81e88e68ae6e
-<p align="center">Demonstration video in local</p>
+<img src="https://github.com/AlferovKirill/Task/assets/59083480/f76f0a7b-08c5-4c32-9284-d84c6e38f5ae">
+<p align="center">degrees.txt</p>
+
+<img src="https://github.com/AlferovKirill/Task/assets/59083480/1f5351e2-0ec6-49c0-9597-d81cf17fa716">
+<p align="center">degrees2.txt</p>
+
+https://github.com/AlferovKirill/Task/assets/59083480/4385d298-6dc3-4f0f-8b18-9122fa568b0a
