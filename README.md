@@ -27,10 +27,10 @@ z = 1.215349
 rm coordinates 2>/dev/null
 ```
 
-<img src="https://github.com/AlferovKirill/Task/assets/59083480/f76f0a7b-08c5-4c32-9284-d84c6e38f5ae" align="center">
-<p align="center">degrees.txt</p>
+## C++/Qt
 
-<img src="https://github.com/AlferovKirill/Task/assets/59083480/1f5351e2-0ec6-49c0-9597-d81cf17fa716" align="center">
-<p align="center">degrees2.txt</p>
+<p align="justify">Помимо консольной C-style версии был сделан графический вариант с возможностью выбора файла с входными данными, а также заданию углов тетта внутри приложения. Система сборки - qmake.</p>
 
+<img src="https://github.com/AlferovKirill/Task/assets/59083480/f76f0a7b-08c5-4c32-9284-d84c6e38f5ae">
+<img src="https://github.com/AlferovKirill/Task/assets/59083480/1f5351e2-0ec6-49c0-9597-d81cf17fa716">
 https://github.com/AlferovKirill/Task/assets/59083480/4385d298-6dc3-4f0f-8b18-9122fa568b0a
