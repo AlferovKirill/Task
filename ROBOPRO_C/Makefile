@@ -1,4 +1,4 @@
-file = "input.txt"
+file = "testData/degrees.txt"
 all: exe
 	./coordinates $(file)
 	-rm coordinates 2>/dev/null

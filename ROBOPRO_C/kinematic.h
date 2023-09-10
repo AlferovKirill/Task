@@ -16,7 +16,7 @@ static double alphaRadian[axesNum] = { PI / 2, 0, 0, PI / 2, -PI / 2, 0 };
 double** matrixCreate();
 void matrixFree(double** matrix);
 void matrixMultiplication(double** result, double** firstMatrix, double** secondMatrix);
-double degreesToRadianConver(double degrees);
+double degreesToRadianConvert(double degrees);
 void stepTransformMatrix(double** result, double theta, double a, double d, double alpha);
 void finalTransformMatrix(double* coordinates, double* thetaDegrees);
 

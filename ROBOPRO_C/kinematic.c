@@ -3,7 +3,7 @@
 double** matrixCreate() {
     double** result = malloc(8 * matrixDimension);
 
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < matrixDimension; i++) {
         result[i] = malloc(matrixDimension * sizeof(double));
     }
 
@@ -23,14 +23,14 @@ void matrixMultiplication(double** result, double** firstMatrix, double** second
         for (int j = 0; j < matrixDimension; j++) {
             result[i][j] = 0.0;
 
-            for(int k = 0; k < 4; k++) {
+            for(int k = 0; k < matrixDimension; k++) {
                 result[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
             }
         }
     }
 }
 
-double degreesToRadianConver(double degrees) {
+double degreesToRadianConvert(double degrees) {
     return PI * degrees / 180;
 }
 

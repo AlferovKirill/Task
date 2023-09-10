@@ -7,7 +7,7 @@ int main(int argc, char** argv) {
     const char* fileName;
 
     if (argc < 2) {
-        fileName = "input.txt";
+        fileName = "testData/degrees.txt";
     }
     else {
         fileName = argv[1];
@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     double* coordinates = malloc(3 * sizeof(double));
 
     for (int i = 0; i < axesNum; ++i) {
-        thetaDegrees[i] = degreesToRadianConver(thetaDegrees[i]);
+        thetaDegrees[i] = degreesToRadianConvert(thetaDegrees[i]);
     }
 
     finalTransformMatrix(coordinates, thetaDegrees);
