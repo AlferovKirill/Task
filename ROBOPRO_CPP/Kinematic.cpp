@@ -17,12 +17,12 @@ double kin::Kinematic::degreesToRadianConvert(double degrees) {
     return PI * degrees / 180;
 }
 
-void kin::Kinematic::matrixMultiplication(vvd& result, vvd firstMatrix, vvd secondMatrix) {
-    for(int i = 0; i < matrixDimension; i++) {
-        for (int j = 0; j < matrixDimension; j++) {
+void kin::Kinematic::matrixMultiplication(vvd& result, const vvd& firstMatrix, const vvd& secondMatrix) {
+    for(int i = 0; i < matrixDimension; ++i) {
+        for (int j = 0; j < matrixDimension; ++j) {
             result[i][j] = 0;
 
-            for(int k = 0; k < matrixDimension; k++) {
+            for(int k = 0; k < matrixDimension; ++k) {
                 result[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
             }
         }
@@ -63,7 +63,7 @@ std::vector<double> kin::Kinematic::finalTransformMatrix() {
 
     stepTransformMatrix(result, degreesToRadianConvert(allData[0][0]), allData[1][0], allData[2][0], allData[3][0]);
 
-    for (int i = 1; i < axesNum; i++) {
+    for (int i = 1; i < axesNum; ++i) {
         stepTransformMatrix(actualMatrix, degreesToRadianConvert(allData[0][i]), allData[1][i], allData[2][i], allData[3][i]);
         matrixMultiplication(nextMatrix, result, actualMatrix);
 

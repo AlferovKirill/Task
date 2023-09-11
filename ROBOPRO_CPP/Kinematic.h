@@ -15,7 +15,7 @@ namespace kin {
         Kinematic();
         void setThetaDegrees(std::vector<double>&& thetaDegrees);
         double degreesToRadianConvert(double degrees);
-        void matrixMultiplication(vvd& result, vvd firstMatrix, vvd secondMatrix);
+        void matrixMultiplication(vvd& result, const vvd& firstMatrix, const vvd& secondMatrix);
         void stepTransformMatrix(vvd& result, double theta, double a, double d, double alpha);
         std::vector<double> finalTransformMatrix();
         std::vector<double> getThetaDegrees();
