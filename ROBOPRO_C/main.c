@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 
     double* thetaDegrees = malloc(sizeof(double) * axesNum);
 
-    for (int i = 0; i < axesNum; i++) {
+    for (int i = 0; i < axesNum; ++i) {
         if (fscanf(file, "%lf", thetaDegrees + i) != 1) {
             free(thetaDegrees);
             printf("Неправильный формат файла!\n");

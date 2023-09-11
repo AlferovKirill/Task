@@ -3,7 +3,7 @@
 double** matrixCreate() {
     double** result = malloc(8 * matrixDimension);
 
-    for (int i = 0; i < matrixDimension; i++) {
+    for (int i = 0; i < matrixDimension; ++i) {
         result[i] = malloc(matrixDimension * sizeof(double));
     }
 
@@ -11,7 +11,7 @@ double** matrixCreate() {
 }
 
 void matrixFree(double** matrix) {
-    for (int i = 0; i < matrixDimension; i++) {
+    for (int i = 0; i < matrixDimension; ++i) {
         free(matrix[i]);
     }
 
@@ -19,11 +19,11 @@ void matrixFree(double** matrix) {
 }
 
 void matrixMultiplication(double** result, double** firstMatrix, double** secondMatrix) {
-    for(int i = 0; i < matrixDimension; i++) {
-        for (int j = 0; j < matrixDimension; j++) {
+    for(int i = 0; i < matrixDimension; ++i) {
+        for (int j = 0; j < matrixDimension; ++j) {
             result[i][j] = 0.0;
 
-            for(int k = 0; k < matrixDimension; k++) {
+            for(int k = 0; k < matrixDimension; ++k) {
                 result[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
             }
         }
@@ -68,7 +68,7 @@ void finalTransformMatrix(double* coordinates, double* thetaDegrees) {
 
     stepTransformMatrix(result, thetaDegrees[0], a_i[0], d_i[0], alphaRadian[0]);
 
-    for (int i = 1; i < axesNum; i++) {
+    for (int i = 1; i < axesNum; ++i) {
         stepTransformMatrix(actualMatrix, thetaDegrees[i], a_i[i], d_i[i], alphaRadian[i]);
         matrixMultiplication(nextMatrix, result, actualMatrix);
 
